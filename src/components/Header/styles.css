@@ -1,0 +1,321 @@
+.nav-wrapper{
+    background-color: rgb(155, 165, 165) !important;
+}
+.brand-logo{
+    /* color: rgb(83, 81, 78) !important; */
+    color: rgb(236, 236, 236) !important;
+    font-size: 1.5rem !important;
+    font-weight :900;
+    transform: translateX(3rem);
+}
+#brand-logo{
+    font-weight: 900 !important;
+}
+._chi{
+    padding-left: 2rem;
+    padding-bottom: 0.7rem;
+}
+
+#mobile-demo > li > a{
+    font-size: 16px !important;
+}
+
+.hide-on-med-and-down > li > a {
+    font-size: 1.1rem !important;
+}
+.hide-on-med-and-down{
+    position: absolute;
+    margin-left: 8rem;
+}
+.admin_key{
+    transform: translateY(0.4rem) !important;
+    padding-right:0.4rem;
+    color: rgb(226, 92, 121);
+}
+.brand-L{
+    z-index: 9px;
+}
+.hide-on-med-and-down{
+    transform: translateX(6rem) !important;
+}
+.sidenav{
+    background-color:rgb(128, 125, 125) !important;
+    padding-top: 3.8em!important;
+}
+.sidenav li a{
+    color: white !important;
+}
+
+.img_ic_{
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    transform: translatex(4.6rem);
+}
+.sidenav_p{
+    color: rgb(207, 196, 196) !important;
+    font-size: 20px !important;
+    transform: translateX(3rem) !important;
+    font-family:"Quicksand",sans-serif !important;
+    font: normal !important;
+}
+.active_{
+    background-color: rgb(16, 17, 59) !important;
+    border-left: 1px solid white !important;
+}
+.active__{
+    background-color: rgb(16, 17, 59) !important;
+}
+/* .sidenav li{
+    background-color: rgb(160, 5, 5) !important;
+    padding-top: 0.4rem !important;
+    padding-bottom: 0.4rem !important;
+    border-left: 1px solid white !important;
+} */
+
+@media all and (min-width: 0) and (max-width: 360px) and (orientation: portrait) {
+    .brand-L{
+    font-size: 1.6rem !important;
+    }
+    .brand-logo{
+        left: 70% !important;
+    }
+    .sidenav{
+        font-family:"Quicksand",sans-serif !important;
+    }
+    .brand-L{
+        font-family: 'Jura', sans-serif;
+    }
+    .img_ic{
+        height: 2.8rem !important;
+        width: 2.8rem !important;
+        border-radius: 50% !important;
+        transform: translate(14.4rem,0.6rem);
+    }
+}
+@media all and (min-width: 0) and (max-width: 281px) and (orientation: portrait) {
+    .brand-L{
+    font-size: 1.6rem !important;
+    }
+    
+    .sidenav{ 
+        font-family:"Quicksand",sans-serif !important;
+    } 
+    .brand-L{
+        font-family: 'Jura', sans-serif !important;
+    }
+    .img_ic{
+        height: 2.8rem !important;
+        width: 2.8rem !important;
+        border-radius: 50% !important;
+        transform: translate(10.4rem,0.7rem);
+    }
+    .brand-logo{
+        left: 70% !important;
+    }
+}
+
+@media all and (min-width: 0) and (max-width: 320px) and (orientation: portrait) {
+    .img_ic{
+        height: 2.5rem !important;
+        width: 2.5rem !important;
+        border-radius: 50% !important;
+        transform: translate(12.7rem,0.6rem) !important;
+    }
+    .brand-L{
+        font-size: 1.5rem !important;
+    }
+    .brand-logo{
+        left: 70% !important;
+    }
+}
+
+@media all and (min-width:361px) and (max-width: 375px) and (orientation: portrait) {
+    .img_ic{
+        height: 2.5rem !important;
+        width: 2.5rem !important;
+        border-radius: 50% !important;
+        transform: translate(15.9rem,0.8rem) !important;
+    }
+   .brand-L{
+        font-family: 'Jura', sans-serif !important;
+         font-size: 1.7rem !important;
+    }
+    .brand-logo{
+        left: 70% !important;
+    }
+}
+
+@media all and (min-width:376px) and (max-width: 411px) and (orientation: portrait) {
+    .img_ic{
+        height: 2.5rem !important;
+        width: 2.5rem !important;
+        border-radius: 50% !important;
+        transform: translate(17.3rem,0.8rem) !important;
+    }
+    .brand-L{
+        font-size: 1.6rem !important;
+    }
+    .brand-logo{
+        left: 70% !important;
+    }
+}
+
+@media all and (min-width:411px) and (max-width: 412px) and (orientation: portrait) {
+    .img_ic{
+        height: 2.5rem !important;
+        width: 2.5rem !important;
+        border-radius: 50% !important;
+        transform: translate(17.3rem,0.8rem) !important;
+    }
+    .brand-L{
+        font-size: 1.6rem !important;
+    }
+    .brand-logo{
+        left: 70% !important;
+    }
+}
+
+@media all and (min-width:413px) and (max-width: 414px) and (orientation: portrait) {
+    .img_ic{
+        height: 2.5rem !important;
+        width: 2.5rem !important;
+        border-radius: 50% !important;
+        transform: translate(17.3rem,0.8rem) !important;
+    }
+    .brand-L{
+        font-size: 1.6rem !important;
+    }
+    .brand-logo{
+        left: 70% !important;
+    }
+}
+
+@media all and (min-width:415px) and (max-width: 480px) and (orientation: portrait) {
+    .img_ic{
+        height: 2.5rem !important;
+        width: 2.5rem !important;
+        border-radius: 50% !important;
+        transform: translate(20.1rem,0.8rem) !important;
+    }
+    .brand-L{
+        font-size: 1.6rem !important;
+    }
+    .brand-logo{
+        left: 70% !important;
+    }
+}
+
+@media all and (min-width:481px) and (max-width: 540px) and (orientation: portrait) {
+    .img_ic{
+        height: 2.5rem !important;
+        width: 2.5rem !important;
+        border-radius: 50% !important;
+        transform: translate(23.1rem,0.8rem) !important;
+    }
+    .brand-L{
+        font-size: 1.6rem !important;
+    }
+    .brand-logo{
+        left: 70% !important;
+    }
+}
+
+@media all and (min-width:541px) and (max-width: 768px) and (orientation: portrait) {
+    .img_ic{
+        height: 2.5rem !important;
+        width: 2.5rem !important;
+        border-radius: 50% !important;
+        transform: translate(32.1rem,0.8rem) !important;
+    }
+    .brand-L{
+        font-size: 1.6rem !important;
+    }
+    .brand-logo{
+        float: right;
+    }
+}
+
+@media all and (min-width:769px) and (max-width: 1024px) and (orientation: portrait) {
+    .img_ic{
+        height: 2.5rem !important;
+        width: 2.5rem !important;
+        border-radius: 50% !important;
+        transform: translate(-4.9rem,0.9rem) !important;
+    }
+    .brand-L{
+        font-size: 1.6rem !important;
+    }
+}
+
+@media all and (min-width: 359px) and (orientation: portrait) {
+    .brand-L{
+        font-family: 'Jura', sans-serif !important;
+    }
+    .sidenav{
+        font-family:"Quicksand",sans-serif !important;
+    }
+    .brand-L{
+        font-size: 1.6rem !important;
+    }
+}
+
+@media all and (min-width: 481px) and (orientation: landscape) {
+    .right li>a{
+        font-family: 'Jura', sans-serif !important;
+        font-size: 1.2rem !important;
+    }
+    .brand-L{
+        font-family: 'Jura', sans-serif !important;
+        font-size: 1.6rem !important;
+    }
+
+    .img_ic{
+        height: 2.4rem !important;
+        width: 2.4rem !important;
+        border-radius: 50% !important;
+        transform: translate(-4.6rem,0.7rem);
+    }
+}
+.navbar-fixed {
+    z-index: 999; 
+    background-color: rgb(63, 58, 58) !important;
+}
+
+@media all and (min-width: 601px) and (max-width: 800px) and (orientation: portrait) {
+    .img_ic{
+        height: 2.4rem !important;
+        width: 2.4rem !important; 
+        border-radius: 50% !important;
+        transform: translate(39.6rem,0.8rem) !important;
+    }
+    .brand-L{
+        font-size: 1.6rem !important;
+    }
+}
+
+@media all and (min-width: 639px) and (max-width: 640px) and (orientation: landscape) {
+    .img_ic{
+        transform: translate(30rem,0.8rem); 
+    }
+    .brand-L{
+        font-size: 1.6rem !important;
+    }
+}
+
+
+
+/* 
+@media only screen and (max-width: 480px) {
+    #your_id {width:000px;height:000px;}
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    #your_id {width:000px;height:000px;}
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    #your_id {width:000px;height:000px;}
+}
+@media only screen and (min-width: 959px) {
+    #your_id {width:000px;height:000px;}
+}
+*/

@@ -1,0 +1,841 @@
+.slider{
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    position: relative;
+    overflow: hidden;
+}
+.myslider{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display : none;
+    top: 0px;
+    left: 0px; 
+    /*background-image: url(./../../assets/img/parallax.jpg);*/
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% center;
+    transform: scale(1,1);
+    animation-name: zoomin;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-name: zoomin;
+    animation-duration: 6s;
+}
+
+@-webkit-keyframes zoomin {
+    from {transform: scale(1,1);} to {transform:scale(1.1,1.1);}
+}
+@keyframes zoomin {
+    from { transform: scale(1, 1);}
+    to {transform: scale(1.1, 1.1);}
+}
+/* position :absolute && relative themes*/
+.prev, .next{
+    position: absolute;
+    top: 49%;
+    font-size: 20px;
+    margin-left: 1.4rem;
+    margin-right: 1.4rem;
+    transform: translate(0, -50%);
+    padding-left: 15px; 
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    cursor: pointer;
+    color: rgb(230, 230, 230);
+    transition: 0.1s;
+    border: 1px solid rgb(216, 219, 216);
+}
+
+.next{
+    right:0
+}
+.advert .material-icons{
+    background-color: rgb(5, 5, 31) !important;
+}
+@media all and (min-width: 0) and (max-width: 281px) and (orientation: portrait) {
+    .text__ .bold_font_{
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400 !important;
+        line-height: 120%;
+        background-color: rgba(51,51,51,.3);
+        padding-top: 4px;
+        padding-bottom: 3px;
+        font-size : 3rem
+    }
+    .text__ .small_font_{
+        font-family: 'Odibee Sans', cursive;
+         font-style: italic;
+        color: whitesmoke;
+        line-height: normal;
+        transform: translateY(5%);
+    }
+    .text_ .small_font__{
+        font-family: 'Electrolize', sans-serif;
+        padding-right: 1rem !important;
+        padding-right: 0.2rem !important;
+        color: rgb(255, 251, 0);
+        font-size: 1.4rem !important;
+        font-weight: 400 !important;
+        line-height: normal;
+        transform: translateY(25%);
+        background-color: rgba(51,51,51,.3);
+        animation: left_to_right 6s ease;
+    }
+}
+ /* mobile-small */
+@media all and (min-width: 0) and (max-width: 360px) and (orientation: portrait) {
+    .text__ .bold_font_{
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400 !important;
+        line-height: 120%;
+        background-color: rgba(51,51,51,.3);
+        padding-top: 4px;
+        padding-bottom: 3px;
+        font-size : 2.5rem !important
+    }
+    .text__ .small_font_{
+        font-family: 'Odibee Sans', cursive;
+         font-style: italic;
+        color: whitesmoke;
+        line-height: normal;
+        transform: translateY(-4%);
+    }
+    .text__{
+        position: relative;
+        text-align: center;
+        top: 16%;
+        animation: top_to_down 6s ease;
+    }
+    .text_{
+        margin: 0;
+        position: relative;
+        padding-right: 2rem;
+        top: 28%;
+    }
+
+    .text_ .small_font__{
+        font-family: 'Electrolize', sans-serif;
+        padding-right: 1rem;
+        padding-right: 0.2rem;
+        color: rgb(255, 251, 0);
+        font-size: 1.8rem;
+        font-weight: 400 !important;
+        line-height: normal;
+        margin-top: -2px;
+        width: 30rem;
+        background-color: rgba(51,51,51,.3);
+        animation: left_to_right 6s ease;
+    }
+
+    .welcome_message .p_label{
+        color: #333;
+        font-size: 1.2em;
+        text-align: center;
+        font-family:"Quicksand",sans-serif;
+    }
+
+    .welcome_message .h3_label{
+        text-transform: uppercase;
+        font-size: 1.2em;
+        color: #002347;
+        text-align: center;
+        font-weight: 500;
+        line-height: 110%;
+        font-family:"Quicksand",sans-serif;
+    }
+    .text_ .bold_font{
+        font-family: 'Odibee Sans', cursive;
+        color: whitesmoke;
+        font-weight: 400 !important;
+        line-height: normal;
+        margin-top: 5px;
+        width: 30rem;
+        background-color: rgba(51,51,51,.3);
+        animation: left_to_right 6s ease;
+    }
+    @keyframes left_to_right {
+        from {
+          margin-left: -100%;
+        }
+        to {
+          margin-left: 0;
+        }
+    }
+    @keyframes top_to_down {
+        from {
+          margin-top: -100%;
+        }
+        to {
+          margin-bottom: 0;
+        }
+    }
+
+    .advert{
+        background-color:  rgb(233, 233, 233);
+        float: none;
+        text-align: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        position: relative;
+        border-radius: 0.5rem;
+    }
+
+    .advert_{
+        padding-left:2rem;
+        padding-right: 2rem;
+        padding-bottom: 20px;
+    }
+
+    .advert .material-icons{
+        transform: translateY(-43px);
+        color: honeydew;
+        padding: 15px;
+        font-size: 60px;
+        border-radius: 50%;
+        background-color: #333333;
+    }
+
+    .advert1 {
+        margin-top: 5rem;
+    }
+
+    .advert2{
+        margin-top: 6rem;
+        padding-bottom : 5px;
+    }
+
+    .advert3{
+        margin-top: 6rem;
+    }
+    .advert h4{
+        margin-top: -16px;
+        font-family: "Quicksand",sans-serif;
+        font-size: 2.0em;
+        font-weight: none;
+    }
+
+    .advert p{
+        margin-top: 0rem;
+    }
+
+    .myslider{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        display : none;
+        top: 0px;
+        left: 0px;
+        /*background-image: url(./../../assets/img/parallax.jpg);*/
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% center;
+        transform: scale(1,1);
+        animation-name: zoomin;
+        -webkit-animation-duration: 6s;
+        -webkit-animation-name: zoomin;
+        animation-duration: 6s;
+    }
+    
+    @-webkit-keyframes zoomin {
+        from {transform: scale(1,1);} to {transform:scale(1.1,1.1);}
+    }
+    @keyframes zoomin {
+        from { transform: scale(1, 1);}
+        to {transform: scale(1.1, 1.1);}
+    }
+}
+
+  /* mobile-large */
+@media all and (min-width: 359px) and (orientation: portrait) { 
+    .text__ .bold_font_{
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 600 !important;
+        line-height: 120%;
+        background-color: rgba(51,51,51,.3);
+        padding-top: 2px;
+        padding-bottom: 3px;
+        font-size: 2.9rem !important;
+    }
+    .text__ .small_font_{
+        font-family: 'Odibee Sans', cursive;
+        font-style: italic;
+        color: whitesmoke;
+        line-height: normal;
+        margin-top: -2px;
+    }
+    .text__{
+        margin: 0;
+        position: relative;
+        text-align: center;
+        top: 20%;
+        animation: top_to_down 6s ease;
+    }
+    .text_{
+        margin: 0;
+        position: relative;
+        top: 34%;
+    }
+
+    .welcome_message{
+        margin-top: 55px;
+    }
+
+    .welcome_message .p_label{
+        color: #333;
+        font-size: 1.2em;
+        text-align: center;
+        font-family:"Quicksand",sans-serif;
+    }
+
+    .welcome_message .h3_label{
+        text-transform: uppercase;
+        font-size: 1.2em;
+        color: #002347;
+        text-align: center;
+        font-weight: 500;
+        line-height: 110%;
+        font-family:"Quicksand",sans-serif;
+    }
+    .text_ .small_font__{
+        font-family: 'Electrolize', sans-serif;
+        margin-left: 3px;
+        margin-right: 3px;
+        padding-left: 5px !important;
+        color: rgb(255, 251, 0);
+        font-weight: 400 !important;
+        line-height: 2.9rem !important;
+        font-size: 1.8rem;
+        transform: translateY(59%);
+        width: 25rem !important;
+        background-color: rgba(51,51,51,.3);
+        animation: left_to_right 6s ease;
+    }
+    @keyframes left_to_right {
+        from {
+          margin-left: -100%;
+        }
+        to {
+          margin-left: 0;
+        }
+    }
+    @keyframes top_to_down {
+        from {
+          margin-top: -100%;
+        }
+        to {
+          margin-bottom: 0;
+        }
+    }
+
+    .advert{
+        background-color:  rgb(233, 233, 233);
+        float: none;
+        text-align: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        position: relative;
+        border-radius: 0.5rem;
+    }
+
+    .advert_{
+        padding-left:2rem;
+        padding-right: 2rem;
+        padding-bottom: 20px;
+    }
+
+    .advert .material-icons{
+        transform: translateY(-43px);
+        color: honeydew;
+        padding: 15px;
+        font-size: 60px;
+        border-radius: 50%;
+        background-color: #333333;
+    }
+
+    .advert1 {
+        margin-top: 5rem;
+        
+    }
+
+    .advert2{
+        margin-top: 6rem;
+        padding-bottom : 5px;
+    }
+
+    .advert3{
+        margin-top: 6rem;
+    }
+    .advert h4{
+        margin-top: -16px;
+        font-family: "Quicksand",sans-serif;
+        font-size: 2.0em;
+        font-weight: none;
+    }
+
+    .myslider{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        display : none;
+        top: 0px;
+        left: 0px;
+        /*background-image: url(./../../assets/img/parallax.jpg);*/
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% center;
+        transform: scale(1,1);
+        animation-name: zoomin;
+        -webkit-animation-duration: 6s;
+        -webkit-animation-name: zoomin;
+        animation-duration: 6s;
+    }
+    
+    @-webkit-keyframes zoomin {
+        from {transform: scale(1,1);} to {transform:scale(1.1,1.1);}
+    }
+    @keyframes zoomin {
+        from { transform: scale(1, 1);}
+        to {transform: scale(1.1, 1.1);}
+    } 
+}
+
+/* mobile-large-landscape */
+@media all and (min-width: 481px) and (orientation: landscape) {
+    .text__ .bold_font_{
+        font-weight: 600 !important;
+        font-family: 'Jura', sans-serif;
+        line-height: 120%;
+        background-color: rgba(51,51,51,.3);
+        padding-top: 2px;
+        padding-bottom: 3px;
+    }
+    .text__ .small_font_{
+        font-family: 'Jura', sans-serif;
+        font-style: italic;
+        color: whitesmoke;
+        line-height: normal;
+        margin-top: 0px;
+    }
+    .text__{
+        margin: 0;
+        position: relative;
+        text-align: center;
+        top: 22%;
+        animation: top_to_down 6s ease;
+    }
+    .text_{
+        margin: 0;
+        position: relative;
+        top: 43%;
+    }
+
+    .welcome_message .p_label{
+        color: rgb(0, 0, 2);
+        font-size: 1.07em;
+        text-align: center;
+        font-weight:lighter;
+        font-family:"Quicksand",sans-serif;
+    }
+    
+    .welcome_message .h3_label{
+        margin-top: 2rem;
+        font-size: 2.em;
+        color: rgb(8, 8, 19);;
+        text-align: center;
+        font-weight: 500;
+        line-height: 110%;
+        font-family:"Quicksand",sans-serif;
+    }
+
+    .text_ .small_font__{ 
+        font-family: 'Jura', sans-serif;
+        margin-left: 3px;
+        margin-right: 3px;
+        color: rgb(255, 251, 0);
+        position:absolute;
+        font-weight: lighter !important;
+        line-height: normal;
+        font-size: 1.9rem;
+        margin-top: 5px;
+        width: 30rem;
+        background-color: rgba(51,51,51,.3);
+        left: 1rem;
+        animation: left_to_right 6s ease;
+    }
+
+    .advert{
+        background-color:  rgb(233, 233, 233);
+        margin-right: 2.9rem;
+        transform: translateX(36.7%);
+        text-align: center;
+    }
+
+    .advert_{
+        position: relative;
+        padding-top: 6.8rem;
+    }
+
+    .advert .material-icons{
+        transform: translateY(-56px);
+        font-size: 5em;
+        text-align: center;
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        padding: 0.8rem;
+        color: whitesmoke;
+        background-color: rgb(5, 5, 31);
+    }
+
+    .advert h4{
+        transform: translateY(-139%);
+        font-family: "Quicksand",sans-serif;
+        font-size: 2.0em;
+        font-weight: 1.rem !important ;
+    }
+
+    .advert p{
+        transform: translateY(-90%);
+        font-family: "Quicksand",sans-serif;
+    }
+
+    .welcome{
+       padding-top: 1rem;  
+    }
+
+    @keyframes left_to_right {
+        from {
+          margin-left: -100%;
+        }
+        to {
+          margin-left: 0;
+        }
+    }
+    @keyframes top_to_down {
+        from {
+          margin-top: -100%;
+        }
+        to {
+          margin-bottom: 0;
+        }
+    }
+
+    .myslider{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        display : none;
+        top: 0px;
+        left: 0px;
+        /*background-image: url(./../../assets/img/parallax.jpg);*/
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% center;
+        transform: scale(1,1);
+        animation-name: zoomin;
+        -webkit-animation-duration: 6s;
+        -webkit-animation-name: zoomin;
+        animation-duration: 6s;
+    }
+    
+    @-webkit-keyframes zoomin {
+        from {transform: scale(1,1);} to {transform:scale(1.1,1.1);}
+    }
+    @keyframes zoomin {
+        from { transform: scale(1, 1);}
+        to {transform: scale(1.1, 1.1);}
+    }
+}
+
+
+/* tablet-small-landscape */
+@media all and (min-width: 600px) and (max-width: 960px) and (orientation: landscape) {
+    .text__ .bold_font_{
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 600 !important;
+        line-height: 120%;
+        background-color: rgba(51,51,51,.3);
+        padding-top: 2px;
+        padding-bottom: 3px;
+        font-size: 2.9rem !important;
+    }
+    .text__ .small_font_{
+        font-family: 'Odibee Sans', cursive;
+        font-style: italic;
+        color: whitesmoke;
+        line-height: normal;
+        margin-top: -2px;
+    }
+    .text__{
+        margin: 0;
+        position: relative;
+        text-align: center;
+        top: 20%;
+        animation: top_to_down 6s ease;
+    }
+    .text_{
+        margin: 0;
+        position: relative;
+        top: 34%;
+    }
+
+    .welcome_message{
+        margin-top: 55px;
+    }
+
+    .welcome_message .p_label{
+        color: #333;
+        font-size: 1.2em;
+        text-align: center;
+        font-family:"Quicksand",sans-serif;
+    }
+
+    .welcome_message .h3_label{
+        text-transform: uppercase;
+        font-size: 1.2em;
+        color: #002347;
+        text-align: center;
+        font-weight: 500;
+        line-height: 110%;
+        font-family:"Quicksand",sans-serif;
+    }
+    .text_ .small_font__{
+        font-family: 'Electrolize', sans-serif;
+        margin-left: 3px;
+        margin-right: 3px;
+        padding-left: 5px !important;
+        color: rgb(255, 251, 0);
+        font-weight: 400 !important;
+        line-height: normal;
+        margin-top: -2px;
+        width: 25rem !important;
+        background-color: rgba(51,51,51,.3);
+        animation: left_to_right 6s ease;
+    }
+    @keyframes left_to_right {
+        from {
+          margin-left: -100%;
+        }
+        to {
+          margin-left: 0;
+        }
+    }
+    @keyframes top_to_down {
+        from {
+          margin-top: -100%;
+        }
+        to {
+          margin-bottom: 0;
+        }
+    }
+
+    .advert{
+        background-color:  rgb(233, 233, 233);
+        float: none;
+        text-align: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        position: relative;
+        border-radius: 0.5rem;
+    }
+
+    .advert_{
+        padding-left:2rem;
+        padding-right: 2rem;
+        padding-bottom: 20px;
+    }
+
+    .advert .material-icons{
+        transform: translateY(-43px);
+        color: honeydew;
+        padding: 15px;
+        font-size: 60px;
+        border-radius: 50%;
+        background-color: #333333;
+    }
+
+    .advert1 {
+        margin-top: 5rem;
+        
+    }
+
+    .advert2{
+        margin-top: 6rem;
+        padding-bottom : 5px;
+    }
+
+    .advert3{
+        margin-top: 6rem;
+    }
+    .advert h4{
+        margin-top: -16px;
+        font-family: "Quicksand",sans-serif;
+        font-size: 2.0em;
+        font-weight: none;
+    }
+
+    .myslider{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        display : none;
+        top: 0px;
+        left: 0px;
+        /*background-image: url(./../../assets/img/parallax.jpg);*/
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% center;
+        transform: scale(1,1);
+        animation-name: zoomin;
+        -webkit-animation-duration: 6s;
+        -webkit-animation-name: zoomin;
+        animation-duration: 6s;
+    }
+    
+    @-webkit-keyframes zoomin {
+        from {transform: scale(1,1);} to {transform:scale(1.1,1.1);}
+    }
+    @keyframes zoomin {
+        from { transform: scale(1, 1);}
+        to {transform: scale(1.1, 1.1);}
+    }
+ }
+ /* tablet-small */
+ @media all and (min-width: 600px) and (orientation: portrait) {
+    .text__ .bold_font_{
+        font-weight: 600 !important;
+        font-family: 'Quicksand', sans-serif;
+        line-height: 120%;
+        background-color: rgba(51,51,51,.3);
+        padding-top: 2px;
+        padding-bottom: 3px;
+    }
+    .text__ .small_font_{
+        font-family: 'Odibee Sans', cursive;
+        font-style: italic;
+        color: whitesmoke;
+        line-height: normal;
+        margin-top: -2px;
+    }
+    .text__{
+        margin: 0;
+        position: relative;
+        text-align: center;
+        top: 22%;
+        animation: top_to_down 6s ease;
+    }
+    .text_{
+        margin: 0;
+        position: relative;
+        top: 50%;
+    }
+
+    .welcome_message .p_label{
+        color: #333;
+        font-size: 1.07em;
+        text-align: center;
+        font-weight:lighter;
+        font-family:"Quicksand",sans-serif;
+    }
+    
+    .welcome_message .h3_label{
+        margin-top: 2rem;
+        font-size:  2.9.rem;
+        color: #02130f;
+        text-align: center;
+        font-weight: 600;
+        line-height: 110%;
+        font-family:"Quicksand",sans-serif;
+    }
+
+    .text_ .small_font__{ 
+        font-family: 'Electrolize', sans-serif;
+        margin-left: 3px;
+        margin-right: 3px;
+        color: rgb(255, 251, 0);
+        position:absolute;
+        font-weight: 2.8rem !important;
+        font-size : 2.95rem;
+        line-height: 4.3rem;
+        margin-top: 5px;
+        width: 45rem !important;
+        background-color: rgba(51,51,51,.3);
+        left: 1rem;
+        animation: left_to_right 6s ease;
+    }
+
+    .advert{
+        background-color:  rgb(233, 233, 233);
+        float: none;
+        text-align: center;
+        position: relative;
+        border-radius: 0.5rem;
+        margin-right: 2.9rem;
+        transform: translateX(32.7%);
+    }
+
+    .advert_{
+        padding-left:2rem;
+        padding-right: 2rem;
+        padding-bottom: 20px;
+        text-align:center;
+    }
+
+    .advert .material-icons{
+        transform: translateY(-43px);
+        color: honeydew;
+        padding: 15px;
+        font-size: 60px;
+        border-radius: 50%;
+        background-color: #333333;
+    }
+
+    .advert1 {
+        margin-top: 6rem;
+        
+    }
+
+    .advert2{
+        margin-top: 6rem;
+        padding-bottom : 5px;
+    }
+
+    .advert3{
+        margin-top: 6rem;
+    }
+    .advert h4{
+        margin-top: -16px;
+        font-family: "Quicksand",sans-serif;
+        font-size: 2.0em;
+        font-weight: none;
+    }
+}
+
+/* tablet-large-landscape */
+@media all and (min-width: 961px) and (orientation: landscape) { }
+
+/* tablet-large */
+@media all and (min-width: 601px) and (max-width: 840px) and (orientation : portrait) { }
+/* desktop-x-small-landscape */
+@media all and (min-width: 0) and (max-width: 480px) and (orientation: landscape) { }
+/* desktop-x-small */
+@media all and (min-width: 0) and (max-width: 480px) and (max-aspect-ratio: 4/3) { }
+/* desktop-small-landscape */
+@media all and (min-width: 481px) and (max-width: 840px) and (orientation: landscape) { }
+/* desktop-small */
+@media all and (min-width: 481px) and (max-width: 840px) and (max-aspect-ratio: 4/3) { }
+/* desktop-medium-landscape */
+@media all and (min-width: 841px) and (max-width: 1280px) and (orientation: landscape) { }
+/* desktop-medium */
+@media all and (min-width: 841px) and (max-width: 1280px) and (max-aspect-ratio: 4/3) { }
+/* desktop-large */
+@media all and (min-width: 1281px) and (max-width: 1600px) { }
+/* desktop-xlarge */
+@media all and (min-width: 1601px) and (max-width: 1920px) { }
