@@ -96,8 +96,6 @@ const Homepage = props =>{
                             </h4>
                         </div>
                     </div> 
-                <a className="prev">&#10094;</a>
-                <a className="next">&#10095;</a>
                 </div>
                 <div className="myslider fade"
                     style={{
@@ -137,8 +135,6 @@ const Homepage = props =>{
                             </h4>
                         </div>
                     </div> 
-                <a className="prev">&#10094;</a>
-                <a className="next">&#10095;</a>
                 </div>
                 <div className="myslider fade"
                     style={{
@@ -178,8 +174,6 @@ const Homepage = props =>{
                             </h4>
                         </div>
                     </div> 
-                <a className="prev">&#10094;</a>
-                <a className="next">&#10095;</a>
                 </div>
             </section>
             <Header2 />
